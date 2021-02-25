@@ -87,28 +87,27 @@ img {
   width: 100%;
   margin: 0;
   background-color: black;
-  border: 2px solid white;
   max-width: 1720px;
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 20px auto 20px;
 }
 
 .banner h1 {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .banner p {
   color: white;
   font-family: "Rubik", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .banner button {
   color: white;
   background-color: #56348b;
   font-family: "Rubik", sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   padding: 6.5px 22.5px;
   border: none;
   text-align: center;
@@ -116,26 +115,29 @@ img {
   display: inline-block;
 }
 
+/* Banner Content */
 .banner-content {
   grid-column: 2;
-  border: 2px solid white;
   display: grid;
   grid-template-rows: 100px 85px 54px 65px 78px 50px;
   align-items: center;
 }
 
+/* 
+Top of the Banner: Blank space
+*/
 .banner-top {
   grid-row: 1;
-  border: 2px solid white;
   height: 100px;
   width: auto;
 }
 
 .banner-nav-logo {
   grid-row: 2;
-  border: 2px solid white;
   height: 85px;
   width: auto;
+  padding: 3px 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 30px auto 30px;
   justify-items: center;
@@ -143,12 +145,12 @@ img {
 
 .main-menu {
   grid-column: 3;
-  border: 2px solid white;
+  width: 24px;
+  height: auto;
 }
 
 .main-logo {
   grid-column: 2;
-  border: 2px solid white;
   height: 85px;
   width: auto;
 }
@@ -171,6 +173,8 @@ img {
 .s-left-arrow {
   grid-column: 1;
   border: 2px solid white;
+  height: 24px;
+  width: auto;
 }
 
 .main-title {
@@ -181,15 +185,12 @@ img {
 .s-right-arrow {
   grid-column: 3;
   border: 2px solid white;
+  height: 24px;
+  width: auto;
 }
 
+.s-left-arrow,
 .s-left-arrow img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.s-right-arrow,
-img {
   max-width: 100%;
   max-height: 100%;
 }
