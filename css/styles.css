@@ -93,14 +93,27 @@ img {
   grid-template-columns: 16px auto 16px;
 }
 
-.banner h1,
-h2,
-h3 {
+.banner h1 {
   color: white;
+  font-size: 18px;
 }
-.banner h2,
-h3 {
+
+.banner p {
+  color: white;
   font-family: "Rubik", sans-serif;
+  font-size: 12px;
+}
+
+.banner button {
+  color: white;
+  background-color: #56348b;
+  font-family: "Rubik", sans-serif;
+  font-size: 11px;
+  padding: 6.5px 22.5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .banner-content {
