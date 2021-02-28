@@ -215,3 +215,68 @@ Top of the Banner: Blank space
   height: 50px;
   width: auto;
 }
+
+.products {
+  /* Flex container */
+  display: flex;
+  /* Main-axis: row. Wrap: multiple lines from top to bottom */
+  flex-flow: row wrap;
+  /* Items centered along the main axis */
+  justify-content: center;
+  /* Items centered along the cross axis */
+  align-items: center;
+  /* Items evenly distributed along the cross axis */
+  align-content: center;
+  min-height: 250px;
+  max-height: 530px;
+  width: auto;
+  /* Top Right Bottom Left */
+  margin: 4.75% 4.75% 0% 4.75%;
+}
+
+.product {
+  flex: 0 1 auto;
+  align-self: auto;
+  text-align: center;
+  height: 38%;
+  width: 42.6%;
+  min-height: 97px;
+  max-height: 210px;
+  min-width: 156px;
+  margin: 1%;
+  /* For floating text: text_over_image */
+  position: relative;
+  text-align: center;
+  color: white;
+  /* Responsive Text Size */
+  font-size: 3.8vw;
+  font-family: "Dancing Script", cursive;
+  /* For image crop: */
+  overflow: hidden;
+}
+
+.text_over_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product img {
+  filter: brightness(0.5);
+  align-self: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.business {
+  height: 201px;
+  width: auto;
+  background-color: blue;
+}
+
+footer {
+  height: 153px;
+  width: auto;
+  background-color: black;
+}
